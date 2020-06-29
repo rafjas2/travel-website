@@ -3,7 +3,6 @@
   padding: 0;
   box-sizing: border-box;
 }
-
 html {
   font-size: 62.5%;
 }
@@ -29,9 +28,11 @@ h3 {
   font-size: 3rem;
   font-weight: 400;
 }
-h4,
-h5 {
+h4 {
   font-size: 2.8rem;
+}
+h5 {
+  font-size: 2rem;
 }
 a {
   color: white;
@@ -47,6 +48,10 @@ button {
 }
 button:hover {
   background: #27394e;
+}
+span {
+  font-family: "Pattaya", sans-serif;
+  font-weight: 400;
 }
 /* Nav section with hero */
 .main-head {
@@ -75,7 +80,7 @@ nav ul {
 .hero {
   min-height: 95vh;
   background: linear-gradient(rgba(0, 0, 0, 0.5), transparent),
-    url(../img/landing-page.jpg); /* for github use ./ */
+    url(../img/landing-page.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -89,12 +94,11 @@ nav ul {
 .hero h3 {
   padding: 5rem;
 }
-
 /* Locations section */
 #locations {
   min-height: 100vh;
   background: linear-gradient(rgba(0, 0, 0, 0.5), transparent),
-    url(../img/new-york-page.png); /* for github use ./ */
+    url(../img/new-york-page.png);
   background-size: cover;
   background-position: center;
   display: flex;
@@ -117,7 +121,6 @@ nav ul {
   background-clip: text;
   -webkit-text-fill-color: transparent;
 }
-
 .cloud {
   position: absolute;
   top: 0%;
@@ -125,13 +128,13 @@ nav ul {
   pointer-events: none;
 }
 .moving-cloud-1 {
-  animation: cloudAnimation 5s infinite alternate ease-in-out;
+  animation: cloudAnimation 4s infinite alternate ease-in-out;
 }
 .moving-cloud-2 {
   top: 10%;
   z-index: -1;
   opacity: 0.5;
-  animation: cloudAnimation 5s infinite alternate ease-in-out;
+  animation: cloudAnimation 4s infinite alternate ease-in-out;
 }
 @keyframes cloudAnimation {
   from {
@@ -172,7 +175,7 @@ nav ul {
   box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.1), 0px 20px 20px rgba(0, 0, 0, 0.1);
 }
 .card-icon {
-  background: #694137;
+  background: #4c6e97; /* #bb7360*/
 }
 .cards img {
   max-width: 15%;
@@ -180,6 +183,73 @@ nav ul {
 }
 .card h4,
 .card p {
+  padding: 3rem;
+}
+/* Contact section */
+#contact {
+  min-height: 100vh;
+  background: linear-gradient(rgba(0, 0, 0, 0.5), transparent),
+    url(../img/contact-mountain.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.form-wrapper {
+  background: rgba(19, 28, 39, 0.8);
+  width: 60%;
+  color: white;
+  border-radius: 2rem;
+}
+.form-head {
+  padding: 4rem;
+  text-align: center;
+}
+.name-form,
+.email-form {
+  padding: 2rem;
+  text-align: center;
+}
+.form-wrapper label {
+  margin: 0rem 3rem;
+}
+.form-wrapper input {
+  padding: 1rem 3rem;
+}
+.form-wrapper button {
+  width: 100%;
+  padding: 2rem;
+  margin-top: 8rem;
+  border-bottom-left-radius: 2rem;
+  border-bottom-right-radius: 2rem;
+}
+footer {
+  color: white;
+  background: rgba(19, 28, 39, 1);
+}
+.footer-wrapper {
+  display: flex;
+  padding: 2rem;
+  width: 90%;
+  margin: auto;
+  align-items: center;
+  min-height: 10vh;
+  flex-wrap: wrap;
+}
+.footer-wrapper h5 {
+  flex: 1 1 40rem;
+}
+.footer-wrapper ul {
+  display: flex;
+  list-style: none;
+  flex: 1 1 40rem;
+  justify-content: space-between;
+  align-items: center;
+}
+.footer-wrapper .icon-hover:hover {
+  filter: invert(40%) sepia(29%) saturate(692%) hue-rotate(172deg)
+    brightness(94%) contrast(89%);
 }
 
 /* Media Query */
@@ -210,5 +280,20 @@ nav ul {
     -webkit-text-fill-color: white;
     padding: 3rem 4rem;
     text-align: center;
+  }
+}
+footer {
+  text-align: center;
+}
+.footer-wrapper {
+  width: 100%;
+}
+.footer-wrapper h5 {
+  padding-bottom: 3rem;
+}
+
+@media (max-width: 500px) {
+  .form-wrapper {
+    width: 80%;
   }
 }
