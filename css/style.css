@@ -75,7 +75,7 @@ nav ul {
 .hero {
   min-height: 95vh;
   background: linear-gradient(rgba(0, 0, 0, 0.5), transparent),
-    url(./img/landing-page.jpg); /* for github use ./ */
+    url(../img/landing-page.jpg); /* for github use ./ */
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
