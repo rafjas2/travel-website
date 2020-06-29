@@ -94,7 +94,7 @@ nav ul {
 #locations {
   min-height: 100vh;
   background: linear-gradient(rgba(0, 0, 0, 0.5), transparent),
-    url(./img/new-york-page.png); /* for github use ./ */
+    url(../img/new-york-page.png); /* for github use ./ */
   background-size: cover;
   background-position: center;
   display: flex;
@@ -165,16 +165,21 @@ nav ul {
   flex-wrap: wrap;
 }
 .card {
+  text-align: center;
   flex: 1 1 25rem;
   min-height: 40vh;
   margin: 2rem 2rem;
   box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.1), 0px 20px 20px rgba(0, 0, 0, 0.1);
 }
+.card-icon {
+  background: #694137;
+}
 .cards img {
-  height: 100px;
-  background: #343c44;
-  width: 100%;
-  padding: 1rem;
+  max-width: 15%;
+  margin: 1rem;
+}
+.card h4,
+.card p {
 }
 
 /* Media Query */
