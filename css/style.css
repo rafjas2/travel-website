@@ -18,6 +18,7 @@ li,
 button,
 label,
 input,
+textarea,
 p {
   font-size: 2rem;
 }
@@ -53,10 +54,16 @@ span {
   font-family: "Pattaya", sans-serif;
   font-weight: 400;
 }
+textarea {
+  font-weight: 600;
+}
 /* Nav section with hero */
 .main-head {
   background: black;
   color: white;
+  position: sticky;
+  top: 0;
+  z-index: 3;
 }
 nav {
   min-height: 5vh;
@@ -207,16 +214,26 @@ nav ul {
   text-align: center;
 }
 .name-form,
-.email-form {
+.email-form,
+.message-form {
   padding: 2rem;
   text-align: center;
 }
+
 .form-wrapper label {
-  margin: 0rem 3rem;
+  margin-right: 3rem;
+  width: 100px;
+  display: inline-block;
 }
-.form-wrapper input {
-  padding: 1rem 3rem;
+.form-wrapper input,
+.form-wrapper textarea {
+  padding: 1rem 0.5rem;
+  width: 250px;
 }
+.form-wrapper textarea {
+  height: 100px;
+}
+
 .form-wrapper button {
   width: 100%;
   padding: 2rem;
@@ -281,19 +298,16 @@ footer {
     padding: 3rem 4rem;
     text-align: center;
   }
-}
-footer {
-  text-align: center;
-}
-.footer-wrapper {
-  width: 100%;
-}
-.footer-wrapper h5 {
-  padding-bottom: 3rem;
-}
-
-@media (max-width: 500px) {
   .form-wrapper {
     width: 80%;
+  }
+  footer {
+    text-align: center;
+  }
+  .footer-wrapper {
+    width: 100%;
+  }
+  .footer-wrapper h5 {
+    padding-bottom: 3rem;
   }
 }
