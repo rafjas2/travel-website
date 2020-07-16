@@ -86,7 +86,7 @@ nav ul {
 #logo {
   flex: 2 1 40rem;
 }
-.hero {
+#hero {
   min-height: 95vh;
   background: linear-gradient(rgba(0, 0, 0, 0.9), transparent),
     url(../img/landing-page.jpg);
@@ -100,7 +100,7 @@ nav ul {
   align-items: center;
   text-align: center;
 }
-.hero h3 {
+#hero h3 {
   padding: 5rem;
 }
 /* Locations section */
